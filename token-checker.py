@@ -28,5 +28,7 @@ def check():
                 print(Fore.YELLOW+"[*] Verification required: "+x)
             else:
                 print(Fore.GREEN+'[+] Valid: '+x)
+                with open("valid.txt", "a") as save:
+                    save.write(x)
 load_token()     
 check()
