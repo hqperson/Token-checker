@@ -29,6 +29,6 @@ def check():
             else:
                 print(Fore.GREEN+'[+] Valid: '+x)
                 with open("valid.txt", "a") as save:
-                    save.write(x)
+                    save.write(x+"\n")
 load_token()     
 check()
